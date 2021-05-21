@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+
+    <link rel='stylesheet' id='patricia-css' href='style.css?version=1.0.4R1.9' type='text/css' media='all' />
+    <title>Shopfaster.se</title>
+</head>
+
+<header>
+
+
+</header>
+<body>
+<div class="header" style="background:#171233;">
+    <h1 style="color:white; text-align:center;">Shopfaster.se</h1>
+    <div class="navbar">
+
+        <a href="index.html">Hem</a>
+        <div class="dropdown">
+            <button class="dropbtn">Meny
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <!--<a href="#">Installationer</a>-->
+                <a href="portfolio.html">Portfolio</a>
+                <a href="consults.html">Konstulter</a>
+            </div>
+        </div>
+        <a href="contact.html">Kontakt</a>
+    </div>
+</div>
+<!--<div class="Shopfaster"><b>Shopfaster.se</b></div>-->
+
+<!--Kontaktformuläret-->
+<h2>Hör av dig till oss!</h2>
+
+
+<div class="container1">
+
+    <form action="/action_page.php">
+        <div class="row1">
+            <div class="col-25">
+                <label for="fname">Namn:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="fullname" placeholder="Ditt namn..">
+            </div>
+        </div>
+        <div class="row1">
+            <div class="col-25">
+                <label for="number">Telefonnummer:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="number" name="number" placeholder="Ditt telefonnummer..">
+            </div>
+        </div>
+        <div class="row1">
+            <div class="col-25">
+                <label for="epost">Epostadress:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="epost" name="epost" placeholder="Din epost..">
+            </div>
+        </div>
+        <div class="row1">
+            <div class="col-25">
+                <label for="subject">Ditt meddelande:</label>
+            </div>
+            <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Skriv här.." style="height:200px"></textarea>
+            </div>
+        </div>
+        <div class="row1">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+
+
+
+
+<script>
+
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	// Next/previous controls
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+
+	// Thumbnail image controls
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		if (n > slides.length) { slideIndex = 1 }
+		if (n < 1) { slideIndex = slides.length }
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex - 1].style.display = "block";
+		dots[slideIndex - 1].className += " active";
+	}
+
+
+</script>
+
+
+
+</div>
+
+
+
+
+<div class="footer">
+    <p>shopfaster.se</p>
+</div>
+
+</body>
+
+</html>
+
+
+
